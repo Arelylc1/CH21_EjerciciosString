@@ -19,3 +19,13 @@ let contFinal=0;
         }// contTemp>contFinal
     }// for index
     console.log(letra, contFinal);
+
+    //Entrada
+    "Laura Aline"
+    //Salida 
+    "enilA aruaL"
+    let frase= "Arely"
+ 
+    for (let index = frase.length ; index >= 0; index--) {;
+        console.log(frase.charAt(index))
+    }
