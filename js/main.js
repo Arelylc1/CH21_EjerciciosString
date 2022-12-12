@@ -21,11 +21,48 @@ let contFinal=0;
     console.log(letra, contFinal);
 
     //Entrada
-    "Laura Aline"
+    //"Laura Aline"
     //Salida 
-    "enilA aruaL"
-    let frase= "Arely"
+    //"enilA aruaL"
+
+    
+    // let frase= "Laura Aline"
  
-    for (let index = frase.length ; index >= 0; index--) {;
-        console.log(frase.charAt(index))
-    }
+    // for (let index = frase.length ; index >= 0; index--) {;
+    //     console.log(frase.charAt(index))
+    // }
+
+    function reves(str) {
+        let tmpStr=" ";
+        for (letindice= str.length-1; indice>=0; indice--){
+            tmpStr += str.charAt(indice);
+        }//for indice
+        return tmpStr;        
+    }//reves
+
+
+    /*Palíndromo:Palabra o expresión que es igual si se lee de izquierda a derecha, igual qeu derecha a iziquierdad
+    Amma 
+    Otto
+    Anina
+    Natan 
+    Ana
+    Siris
+    Aziza
+    Ramar
+    Nayan 
+
+    Radar
+    Reconocer
+    anita lava la tina*/
+    
+    function esPalindromo(str){
+        str= str.toLoWerCase();
+        str= str.replaceAll(" ", "")
+        let res = false;
+      
+      if (reves(str)==str)
+        return true;
+    
+    return false;
+    } //esPalindromo
